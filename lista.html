@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="lista.js"></script>
+</head>
+<body>
+    Elemento:<input type="text" id="num" value="" />
+    Posicion:<input type="text" id="ind" value="" />
+    <button onclick="add(list,parseInt(document.getElementById('num').value));console.log(list);">Añadir numero</button>
+    <button onclick="addAt(list,parseInt(document.getElementById('num').value),parseInt(document.getElementById('ind').value));console.log(list);">Añadir numero en Posicion</button>
+    <button onclick="clearr(list);console.log(list);">borrar</button> 
+
+    <button onclick="console.log(list);">mostrar</button><!-- toString = object HTMLButtonElement -->
+</body>
+</html>
